@@ -1,0 +1,68 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #325370;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Container */
+.container {
+    text-align: center;
+}
+
+/* Step Elements */
+.step {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+.step-1 {
+    animation-delay: 0s;
+}
+
+.step-2 {
+    animation-delay: 2s;
+}
+
+.step-3 {
+    animation-delay: 4s;
+}
+
+.step-4 {
+    animation-delay: 6s;
+}
+
+/* Title & Poetry Styling */
+h1 {
+    font-size: 3rem;
+    color: #4CAF50;
+}
+
+p {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 10px;
+}
+
+/* Animation for Fade In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
